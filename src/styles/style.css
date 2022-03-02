@@ -1,1 +1,131 @@
-/* Escreva seu código aqui */
+header {
+    background-color: #4c257e;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color: #fcc602;
+}
+
+main {
+    background-color: #ffdd55;
+    height: 100%;
+}
+
+figure img {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+body.scrollStop {
+    overflow: hidden;
+}
+
+body.scrollStop::before{
+    content: '';
+    display: block;
+    position: fixed;
+    background-color: #9d4edd;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+figcaption {
+    display: none;
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pergunta input {
+    padding: 35px;
+    margin: 15px 0 10px;
+    border: none;
+    text-align: center;
+}
+
+aside {
+    background-color: #9d4edd;
+    color: white;
+}
+
+details {
+    width: 80%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+details summary {
+    font-size: 20px;
+}
+
+ul li {
+    margin: 7px 0 0 30px;
+    list-style: circle;
+}
+
+.pop_up_vitoria {
+    position: fixed;
+    transform: translateX(-30%);
+    z-index: 9;
+    top: 25%;
+    left: 33%;
+    background-color: #ff6d00;
+    width: 70%;
+    height: 40%;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.pop_up_vitoria.show {
+    display: block;
+}
+
+.pop_up_vitoria button {
+    display: flex;
+    margin: 50px auto;
+    padding: 10px;
+    border: none;
+}
+
+.pop_up_vitoria p {
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+
+
+@media screen and (min-width: 769px) {
+    main {
+        background-color: #ffdd55;
+        height: 100%;
+    }
+
+    figure img {
+        width: 25%;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .pergunta {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+  
+}

@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <title>Magic 8-Ball</title>
 </head>
+
 <body>
-  <!-- Escreva seu código aqui -->
+  <header>
+    <h1>Magic 8-ball</h1>
+  </header>
+
+  <aside>
+    <details>
+      <summary>Regras</summary>
+      <ul>
+        <li>Faça perguntas que possam ser respondidas com sim ou não.</li>
+        <li>Escreva sua pergunta no campo "Faça sua pergunta".</li>
+        <li>Depois de escrever sua pergunta, clique na bola 8.</li>
+        <li>Sua resposta aparecerá na tela.</li>
+      </ul>
+    </details>
+  </aside>
+
+  <main>
+    <section>
+      <figure>
+        <img src="/src/img/magic ball.png" alt="bola 8">
+        <figcaption>Bola 8</figcaption>
+      </figure>
+    </section>
+    <section>
+      <form class="pergunta">
+        <input id="inputPergunta" type="text" value="" placeholder="Faça sua pergunta">
+      </form>
+    </section>
+  </main>
+
+  <section id="pop_up" class="pop_up_vitoria">
+
+  </section>
+
+  <script src="/src/script.js"></script>
+  <script src="/src/controllers/popUp.js"></script>
 </body>
+
 </html>
